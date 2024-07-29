@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cormorant Unicase", cursive;
+}
+
+body {
+  font-family: "Newsreader", sans-serif;
+
+}
+
+.text-title {
+  font-family: 'Cormorant Unicase';
+  font-weight: 600;
+  font-size: 50px;
+}
+
+
+#lockscreen {
+  height: 100vh;
+  width: 100vw;
+  z-index: 99;
+  position: fixed;
+  background-image: url("../Images/carousel-6.jpeg");
+  background-size: cover;
+}
+
+
+
+#home {
+  height: 100vh;
+  background-image: url("../Images/bg-black-1.jpg");
+  /* background-color: #141414; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#head {
+  margin: 4em auto;
+
+}
+
+.flower-frame {
+  width: 100px;
+  display: none;
+}
+
+#head .body-head {
+  height: 5em;
+  display: block;
+  margin: 20px auto;
+}
+
+#body {
+  background-color: #161616;
+  margin-top: 20px;
+
+}
+
+#body .card-acara {
+  border-radius: 1.6em;
+}
+
+#body .mapouter {
+  position: relative;
+}
+
+#body .mapouter .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+}
+
+#body .mapouter .gmap_canvas iframe {
+  height: 80vmin;
+  width: 75%;
+}
+
+.custom-shape-divider-top-1630374983 .shape-fill {
+  fill: #161616;
+}
+
+@media only screen and (max-width: 768px) {
+  #body .mapouter .gmap_canvas iframe {
+    height: 100vmin;
+    width: 90%;
+  }
+
+  /* #home{
+    background-image: url("../Images/bgberdua1.jpg");
+
+
+  } */
+
+ 
+}
+
+#gallery {
+  margin: 4em auto;
+}
+
+#gallery .carousel {
+  width: 600px;
+}
+
+.img-bank {
+  width: 200px;
+  height: 70px;
+}
+
+.cashless-give {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.alert-copy {
+  width: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+  #gallery .carousel {
+    width: 100%;
+  }
+  .img-bank {
+    width: 100px;
+ 
+  }
+  .alert-copy{
+    width: 50%;
+  }
+  
+}
+
+#endsection {
+  background-color: #161616;
+  margin-bottom: 20px
+}
+
+.music-button {
+  display: inline;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 98;
+  border: none;
+  outline: none;
+  background-color: #161616;
+  color: #141414;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.music-button:hover {
+  background-color: #161616;
+}
+
+.swiper {
+  width: 100%;
+  height: 420px;
+}
+
+
+
+.content-overlay {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  text-align: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+
+/* Pastikan Swiper berada di belakang konten */
+.mySwiper {
+  width: 100%;
+  height: 100vh; /* Sesuaikan dengan tinggi layar */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.mySwiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.background-swiper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-swiper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.966); /* Ubah nilai opacity sesuai kebutuhan */
+  z-index: 1;
+}
+
+
+/* Mengatur ukuran konten overlay */
+.content-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.content-overlay p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.content-overlay button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content-overlay button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.img-carousel {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn2 {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #fefefe;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.btn2::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - -2px);
+  background-color: #fff;
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.btn2::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 50px);
+  background-color: #fff;
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.btn2:hover::before {
+  transform: translateY(-25px);
+  height: 0;
+}
+
+.btn2:hover::after {
+  transform: scaleX(0);
+  transition-delay: 0.15s;
+}
+
+.btn2:hover {
+  border: 2px solid #000;
+}
+
+.btn2 span {
+  position: relative;
+  z-index: 3;
+}
+
+.button-add-calendar {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 425px) {
+  .flower-frame {
+    display: block;
+    width: 100%;
+  }
+
+  #head{
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=undangan.css.map */
